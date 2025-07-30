@@ -1,0 +1,12 @@
+{
+    "title": "Half Mast",
+    "url": "https://www.tn.gov/about-tn/flag-status.html",
+    "scraper": [
+        {
+            "type": "value",
+            "value": "textimage-text",
+            "key": "full_staff",
+            "check_for": "Full Staff"
+        }
+    ]
+}

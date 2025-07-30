@@ -14,7 +14,7 @@ def check(url):
         if " " not in line:
             # The line doesn't contain the correct information
             continue
-        # TODO :: Check for the base path i.e. /admin/* should not allow anything after /admin
+        # TODO :: Check for the base path i.e. /admin/ should not allow anything after that includes /admin/ at the start
         allowed, path = line.split(" ", 1)
         path = path.strip("/")
         if path == url_path:

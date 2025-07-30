@@ -1,0 +1,64 @@
+{
+    "title": "Books",
+    "url": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+    "scraper": [
+        {
+            "type": "value",
+            "value": "product_pod",
+            "key": "container",
+            "keep": false,
+            "scrape": [
+                {
+                    "type": "value",
+                    "value": "image_container",
+                    "key": "image",
+                    "keep": false,
+                    "scrape": [
+                        {
+                            "type": "attribute",
+                            "value": "alt"
+                        },
+                        {
+                            "type": "attribute",
+                            "value": "src"
+                        }
+                    ]
+                },
+                {
+                    "type": "attribute",
+                    "value": "title"
+                },
+                {
+                    "type": "value",
+                    "value": "One",
+                    "key": "one_star",
+                    "boolean_response": true
+                },
+                {
+                    "type": "value",
+                    "value": "Two",
+                    "key": "two_star",
+                    "boolean_response": true
+                },
+                {
+                    "type": "value",
+                    "value": "Three",
+                    "key": "three_star",
+                    "boolean_response": true
+                },
+                {
+                    "type": "value",
+                    "value": "Four",
+                    "key": "four_star",
+                    "boolean_response": true
+                },
+                {
+                    "type": "value",
+                    "value": "Five",
+                    "key": "five_star",
+                    "boolean_response": true
+                }
+            ]
+        }
+    ]
+}

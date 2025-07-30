@@ -8,9 +8,9 @@ def fetch(url):
         return False
     response.raise_for_status()
     # Minifies the text to reduce space if stored
-    return minify(response.text)
+    return minify_html(response.text)
 
-def minify(content):
+def minify_html(content):
     minified = ""
     for line in content.splitlines():
         # Makes sure the line isn't empty
